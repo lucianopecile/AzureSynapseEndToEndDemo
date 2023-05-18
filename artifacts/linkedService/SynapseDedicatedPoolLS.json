@@ -9,14 +9,14 @@
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "sqlsynapse001"
+				"defaultValue": "wssynapseendtoend"
 			}
 		},
 		"annotations": [],
 		"type": "AzureSqlDW",
 		"typeProperties": {
 			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=\"@{concat(linkedService().ServerName,'.sql.azuresynapse.net')}\";initial catalog=@{linkedService().DatabaseName};user id=synapseendtoend",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTkFQU0VANUI2QjhBQzAtRjc1Qi00MjQ1LTg4QTUtNThBRjYyNzAwNDk2X2MzM2E1ZjljLTllMzEtNGY0OS1hYzFlLWUzN2ZiOTE4YTM3MSINCn0="
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTkFQU0VANUI2QjhBQzAtRjc1Qi00MjQ1LTg4QTUtNThBRjYyNzAwNDk2X2E5YjE3MzA1LTIyMzItNDFmYi1iMDcyLWU5ZjNiOWQxMmEzYyINCn0="
 		},
 		"connectVia": {
 			"referenceName": "AutoResolveIntegrationRuntime",
