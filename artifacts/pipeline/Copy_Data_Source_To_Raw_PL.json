@@ -182,7 +182,8 @@
 		],
 		"parameters": {
 			"TargetStorageName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "stsynapseendtoend001"
 			},
 			"DatasetSize": {
 				"type": "string",
