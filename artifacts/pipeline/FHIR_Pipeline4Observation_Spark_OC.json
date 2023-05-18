@@ -36,13 +36,13 @@
 						},
 						"type": "BigDataPoolReference"
 					},
-					"executorSize": null,
+					"executorSize": "Small",
 					"conf": {
 						"spark.dynamicAllocation.enabled": null,
 						"spark.dynamicAllocation.minExecutors": null,
 						"spark.dynamicAllocation.maxExecutors": null
 					},
-					"driverSize": null,
+					"driverSize": "Small",
 					"numExecutors": null
 				}
 			},
@@ -87,13 +87,13 @@
 						},
 						"type": "BigDataPoolReference"
 					},
-					"executorSize": null,
+					"executorSize": "Small",
 					"conf": {
 						"spark.dynamicAllocation.enabled": null,
 						"spark.dynamicAllocation.minExecutors": null,
 						"spark.dynamicAllocation.maxExecutors": null
 					},
-					"driverSize": null,
+					"driverSize": "Small",
 					"numExecutors": null
 				}
 			},
@@ -128,6 +128,9 @@
 							},
 							"wildcardFileName": "*.parquet",
 							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
 						}
 					},
 					"sink": {
@@ -230,19 +233,19 @@
 		"parameters": {
 			"StorageName": {
 				"type": "string",
-				"defaultValue": "synapsee2elake"
+				"defaultValue": "stsynapseendtoend001"
 			},
 			"DatabaseName": {
 				"type": "string",
-				"defaultValue": "synapsee2edw"
+				"defaultValue": "sqlsynapse001"
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "synapsee2e"
+				"defaultValue": "wssynapseendtoend"
 			},
 			"SparkPoolName": {
 				"type": "string",
-				"defaultValue": "synapsee2espark"
+				"defaultValue": "sparksynapse001"
 			},
 			"DatasetSize": {
 				"type": "string",
