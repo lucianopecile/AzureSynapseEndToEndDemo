@@ -4,11 +4,11 @@
 		"parameters": {
 			"DatabaseName": {
 				"type": "string",
-				"defaultValue": "healthcare"
+				"defaultValue": "sqlsynapse001"
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "health"
+				"defaultValue": "sqlsynapse001"
 			}
 		},
 		"annotations": [],
